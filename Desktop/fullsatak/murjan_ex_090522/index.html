@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="tit">Add Product</h1>
+    <div class="addprototable">
+      <input
+        class="data"
+        type="text"
+        id="nameproduct"
+        placeholder="enter the name of product"
+        required/>
+      <input type="number" id="number" class="data" placeholder="enter the number" required />
+
+      <input
+      class="data"
+        type="text"
+        id="image"
+        placeholder="enter the link of image"
+        required
+      />
+      <select name="" id="selector" class="data">
+        <option value="Drinks">Drinks</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Basic">Basic</option>
+      </select>
+      <button id="send" class="data">add product</button>
+    </div>
+    <h1 class="tit">My Cart</h1>
+    <div class="addpro">
+    <table >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>price</td>
+          <td>image</td>
+          <td>Catalog</td>
+        </tr>
+      </thead>
+      <tbody id="tabledata"></tbody>
+    </table>
+</div>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
